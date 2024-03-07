@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useEffect, useId, useRef } from "react";
 import { FaBugSlash } from "react-icons/fa6";
 import { GiTeacher } from "react-icons/gi";
 import { ImOffice } from "react-icons/im";
@@ -70,9 +70,30 @@ const Service = ({
 	icon: React.ReactNode;
 }) => {
 	const id = useId();
+	const service = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			function (entries, observer) {
+				if (entries[0].isIntersecting) {
+					entries[0].target.classList.remove("translate-y-12");
+					entries[0].target.classList.remove("opacity-0");
+					observer.disconnect();
+				}
+			},
+			{
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.5,
+			}
+		);
+		observer.observe(service.current as HTMLDivElement);
+	}, []);
+
 	return (
 		<div
-			className="hover:bg-slate-100 bg-slate-50 p-4 rounded-md shadow-sm hover:shadow-lg"
+			ref={service}
+			className="hover:bg-slate-100 translate-y-12 opacity-0 [transition:_0.7s_linear_all] bg-slate-50 p-4 rounded-md shadow-sm hover:shadow-lg"
 			key={id}
 		>
 			<span className="text-3xl text-slate-600">{icon}</span>
