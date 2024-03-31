@@ -28,7 +28,9 @@ const Header = () => {
 			>
 				<div className="flex justify-between flex-1 max-w-screen-lg items-center">
 					<h3 className="font-bold text-slate-600">
-						<a onClick={scroll} href="#">Onah Victor</a>
+						<a onClick={scroll} href="#">
+							Onah Victor
+						</a>
 					</h3>
 					<div className="flex justify-around flex-1 items-center">
 						<div className="flex justify-between gap-3">
@@ -83,7 +85,11 @@ const Header = () => {
 				</div>
 			</div>
 			<div className="min-[767px]:hidden flex justify-between items-center p-4 bg-white shadow-sm sticky top-0 w-full left-0">
-				<h3 className="font-bold text-slate-600">Onah Victor</h3>
+				<h3 className="font-bold text-slate-600">
+					<a onClick={scroll} href="#">
+						Onah Victor
+					</a>
+				</h3>
 				<button
 					onClick={() => setIsMenuOpen(true)}
 					className="h-10 w-10 hover:bg-slate-200 active:scale-95 rounded-full flex justify-center items-center"
