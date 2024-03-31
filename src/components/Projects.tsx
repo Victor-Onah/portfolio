@@ -76,10 +76,10 @@ const Project = ({
 	return (
 		<div
 			ref={project}
-			className="hover:bg-slate-100 bg-slate-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] rounded-md shadow-sm hover:shadow-lg overflow-hidden h-fit"
+			className="hover:bg-slate-100 bg-slate-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] rounded-md shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
 			key={id}
 		>
-			<img src={imageUrl} alt={name} />
+			<img className="h-full block flex-1" src={imageUrl} alt={name} />
 			<div className="p-4">
 				<h3 className="font-semibold">{name}</h3>
 				<p>{description}</p>
