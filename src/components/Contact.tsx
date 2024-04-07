@@ -24,10 +24,48 @@ const Contact = () => {
 		observer.observe(contact.current as HTMLDivElement);
 	}, []);
 	return (
-		<div id="contact" className="flex max-md:flex-col">
+		<div id="contact" className="flex max-md:flex-col-reverse">
+			<div className="bg-zinc-600 w-1/2 max-md:w-full max-w-3xl px-4 py-10">
+				<form className="flex flex-col gap-4 max-w-md m-auto">
+					<input
+						className="p-2 rounded-md bg-zinc-400 text-white focus:outline-none bg-opacity-35"
+						type="text"
+						placeholder="Full name"
+						name="name"
+						id="name"
+					/>
+					<input
+						className="p-2 rounded-md bg-zinc-400 text-white focus:outline-none bg-opacity-35"
+						type="email"
+						placeholder="Email"
+						name="email"
+						id="email"
+					/>
+					<input
+						className="p-2 rounded-md bg-zinc-400 text-white focus:outline-none bg-opacity-35"
+						type="tel"
+						placeholder="Phone number"
+						name="phone_number"
+						id="phone-number"
+					/>
+					<textarea
+						className="p-2 rounded-md bg-zinc-400 text-white focus:outline-none bg-opacity-35"
+						placeholder="Type your message here..."
+						name="message"
+						id="message"
+						cols={30}
+						rows={10}
+					></textarea>
+					<input
+						className="p-2 rounded-md bg-zinc-950 text-white focus:outline-none bg-opacity-35 shadow-inner"
+						type="submit"
+						value="Submit"
+					/>
+				</form>
+			</div>
 			<div
 				ref={contact}
-				className="max-md:w-full flex-1 flex justify-center items-center -translate-x-12 opacity-0 [transition:_0.7s_linear_all] "
+				className="max-md:w-full flex justify-start items-center -translate-x-12 opacity-0 [transition:_0.7s_linear_all] "
 			>
 				<div className="flex flex-col px-4 py-14 gap-1 max-w-4xl mx-auto h-fit">
 					<h2 className="font-bold text-3xl">Get In Touch</h2>
@@ -73,44 +111,6 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="bg-slate-600 w-1/2 max-md:w-full max-w-3xl px-4 py-10">
-				<form className="flex flex-col gap-4 max-w-md m-auto">
-					<input
-						className="p-2 rounded-md bg-slate-400 text-white focus:outline-none bg-opacity-35"
-						type="text"
-						placeholder="Full name"
-						name="name"
-						id="name"
-					/>
-					<input
-						className="p-2 rounded-md bg-slate-400 text-white focus:outline-none bg-opacity-35"
-						type="email"
-						placeholder="Email"
-						name="email"
-						id="email"
-					/>
-					<input
-						className="p-2 rounded-md bg-slate-400 text-white focus:outline-none bg-opacity-35"
-						type="tel"
-						placeholder="Phone number"
-						name="phone_number"
-						id="phone-number"
-					/>
-					<textarea
-						className="p-2 rounded-md bg-slate-400 text-white focus:outline-none bg-opacity-35"
-						placeholder="Type your message here..."
-						name="message"
-						id="message"
-						cols={30}
-						rows={10}
-					></textarea>
-					<input
-						className="p-2 rounded-md bg-slate-950 text-white focus:outline-none bg-opacity-35 shadow-inner"
-						type="submit"
-						value="Submit"
-					/>
-				</form>
 			</div>
 		</div>
 	);

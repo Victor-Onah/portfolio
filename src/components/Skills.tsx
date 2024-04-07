@@ -35,7 +35,7 @@ const Skills = () => {
 		{ name: "Mongoose", value: 78, icon: <SiMongoose /> },
 	];
 	return (
-		<div className="bg-slate-50">
+		<div className="bg-zinc-50">
 			<div className="max-w-5xl mx-auto px-4 py-14">
 				<h2 className="font-bold text-2xl mb-4">My Skills</h2>
 				<p className="mb-4 font-semibold">
@@ -87,11 +87,11 @@ const Skill = ({
 				<p className="font-semibold">{name}</p>
 			</div>
 			<div className="flex gap-2 items-center">
-				<div className="w-full h-[3px] bg-slate-100 flex-1">
+				<div className="w-full h-[3px] bg-zinc-100 flex-1">
 					<span
 						style={{ width: `${percentage}%` }}
 						ref={progressBar}
-						className="block [transition:_1s_linear_width] h-full bg-slate-400"
+						className="block [transition:_1s_linear_width] h-full bg-zinc-400"
 					></span>
 				</div>
 				<span>{percentage}%</span>

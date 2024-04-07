@@ -39,7 +39,7 @@ const Projects = () => {
 		},
 	];
 	return (
-		<div id="projects" className="bg-sky-50">
+		<div id="projects" className="bg-purple-50">
 			<div className="max-w-6xl mx-auto px-4 py-14">
 				<h2 className="font-bold text-2xl mb-4">My Projects</h2>
 				<p className="mb-4 font-semibold">
@@ -90,7 +90,7 @@ const Project = ({
 	return (
 		<div
 			ref={project}
-			className="hover:bg-slate-100 bg-slate-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
+			className="hover:bg-zinc-100 bg-zinc-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
 			key={id}
 		>
 			<img className="h-full block flex-1" src={imageUrl} alt={name} />
@@ -98,7 +98,7 @@ const Project = ({
 				<h3 className="font-semibold">{name}</h3>
 				<p>{description}</p>
 				<a
-					className="p-2 rounded-full bg-slate-500 text-white active:scale-95 block w-fit mt-4"
+					className="p-2 rounded-full bg-zinc-500 text-white active:scale-95 block w-fit mt-4"
 					href={link}
 				>
 					View project

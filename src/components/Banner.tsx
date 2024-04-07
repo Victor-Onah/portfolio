@@ -25,7 +25,7 @@ const Banner = () => {
 	return (
 		<header
 			ref={banner}
-			className="flex justify-center -translate-x-12 opacity-0 [transition:_0.7s_linear_all] items-center bg-slate-100 h-[400px] p-4"
+			className="flex justify-center -translate-x-12 opacity-0 [transition:_0.7s_linear_all] items-center bg-zinc-100 h-[400px] p-4"
 		>
 			<div className="flex flex-col gap-4">
 				<div className="text-slate-600">
