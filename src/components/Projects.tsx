@@ -23,6 +23,20 @@ const Projects = () => {
 			link: "https://naijaquotes.onrender.com",
 			imageUrl: "/images/naija_quotes.png",
 		},
+		{
+			name: "Cryptic",
+			description:
+				"Cryptic is a simple landing page design for a crypto currency website. It features a deep blue background and white foreground (for text and images). It was built with React.js and Tailwind CSS.",
+			link: "https://cryptic-j0p0.onrender.com/",
+			imageUrl: "/images/cryptic.png",
+		},
+		{
+			name: "React Form",
+			description:
+				"React Form is another landing page that I used to express my design skills. It was made in response to an interview task given to me by RichForthStores during my interview with them. It features a purple background and various animations and transforms. It was built with React.js and Tailwind CSS. Also, form validation was done using the react-hook-form library",
+			link: "https://react-form-uiyv.onrender.com/",
+			imageUrl: "/images/react-form.png",
+		},
 	];
 	return (
 		<div id="projects" className="bg-sky-50">
@@ -76,7 +90,7 @@ const Project = ({
 	return (
 		<div
 			ref={project}
-			className="hover:bg-slate-100 bg-slate-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] rounded-md shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
+			className="hover:bg-slate-100 bg-slate-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
 			key={id}
 		>
 			<img className="h-full block flex-1" src={imageUrl} alt={name} />
