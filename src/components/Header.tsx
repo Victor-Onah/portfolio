@@ -37,14 +37,14 @@ const Header = () => {
 							<a
 								data-id="about"
 								onClick={scroll}
-								className="p-2 rounded-full hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+								className="p-2 rounded-full hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 								href="#about"
 							>
 								About Me
 							</a>
 							<a
 								onClick={scroll}
-								className="p-2 rounded-full hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+								className="p-2 rounded-full hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 								href="#services"
 								data-id="services"
 							>
@@ -52,7 +52,7 @@ const Header = () => {
 							</a>
 							<a
 								onClick={scroll}
-								className="p-2 rounded-full hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+								className="p-2 rounded-full hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 								href="#projects"
 								data-id="projects"
 							>
@@ -60,7 +60,7 @@ const Header = () => {
 							</a>
 							<a
 								onClick={scroll}
-								className="p-2 rounded-full hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+								className="p-2 rounded-full hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 								href="#contact"
 								data-id="contact"
 							>
@@ -92,7 +92,7 @@ const Header = () => {
 				</h3>
 				<button
 					onClick={() => setIsMenuOpen(true)}
-					className="h-10 w-10 hover:bg-zinc-200 active:scale-95 rounded-full flex justify-center items-center"
+					className="h-10 w-10 hover:bg-indigo-200 active:scale-95 rounded-full flex justify-center items-center"
 				>
 					<VscMenu />
 				</button>
@@ -105,7 +105,7 @@ const Header = () => {
 						<div className="flex justify-end">
 							<button
 								onClick={() => setIsMenuOpen(false)}
-								className="h-10 w-10 hover:bg-zinc-200 active:scale-95 rounded-full flex justify-center
+								className="h-10 w-10 hover:bg-indigo-200 active:scale-95 rounded-full flex justify-center
          items-center"
 							>
 								<VscClose />
@@ -115,7 +115,7 @@ const Header = () => {
 							onClick={(e) => (
 								scroll(e), setTimeout(() => setIsMenuOpen(false), 300)
 							)}
-							className="p-2 rounded-md hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+							className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 							href="#about"
 							data-id="about"
 						>
@@ -125,7 +125,7 @@ const Header = () => {
 							onClick={(e) => (
 								scroll(e), setTimeout(() => setIsMenuOpen(false), 300)
 							)}
-							className="p-2 rounded-md hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+							className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 							href="#services"
 							data-id="services"
 						>
@@ -135,7 +135,7 @@ const Header = () => {
 							onClick={(e) => (
 								scroll(e), setTimeout(() => setIsMenuOpen(false), 300)
 							)}
-							className="p-2 rounded-md hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+							className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 							href="#projects"
 							data-id="projects"
 						>
@@ -145,7 +145,7 @@ const Header = () => {
 							onClick={(e) => (
 								scroll(e), setTimeout(() => setIsMenuOpen(false), 300)
 							)}
-							className="p-2 rounded-md hover:bg-zinc-200 hover:text-slate-600 active:scale-95 transition-transform"
+							className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
 							href="#contact"
 							data-id="contact"
 						>

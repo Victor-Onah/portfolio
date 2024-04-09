@@ -76,7 +76,7 @@ const Project = ({
 	return (
 		<div
 			ref={project}
-			className="hover:bg-zinc-100 bg-zinc-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
+			className="hover:bg-indigo-100 bg-indigo-50 translate-y-12 opacity-0 [transition:_0.7s_linear_all] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between"
 			key={id}
 		>
 			<img className="h-full block flex-1" src={imageUrl} alt={name} />
@@ -84,7 +84,7 @@ const Project = ({
 				<h3 className="font-semibold">{name}</h3>
 				<p>{description}</p>
 				<a
-					className="p-2 rounded-full bg-zinc-500 text-white active:scale-95 block w-fit mt-4"
+					className="p-2 rounded-full bg-indigo-500 text-white active:scale-95 block w-fit mt-4"
 					href={link}
 				>
 					View project

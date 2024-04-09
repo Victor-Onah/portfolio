@@ -93,7 +93,7 @@ const Service = ({
 	return (
 		<div
 			ref={service}
-			className="hover:bg-zinc-100 translate-y-12 opacity-0 [transition:_0.7s_linear_all] bg-zinc-50 p-4 rounded-md shadow-sm hover:shadow-lg"
+			className="hover:bg-indigo-100 translate-y-12 opacity-0 [transition:_0.7s_linear_all] bg-indigo-50 p-4 rounded-md shadow-sm hover:shadow-lg"
 			key={id}
 		>
 			<span className="text-3xl text-slate-600">{icon}</span>

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
 
 const Banner = () => {
-	const banner = useRef<HTMLElement>(null);
+	const banner = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -23,11 +23,11 @@ const Banner = () => {
 	}, []);
 
 	return (
-		<header
-			ref={banner}
-			className="flex justify-center -translate-x-12 opacity-0 [transition:_0.7s_linear_all] items-center bg-zinc-100 h-[400px] p-4"
-		>
-			<div className="flex flex-col gap-4">
+		<header className="flex justify-center items-center bg-indigo-100 h-[400px] p-4">
+			<div
+				ref={banner}
+				className="-translate-x-12 opacity-0 [transition:_0.7s_linear_all] flex flex-col gap-4"
+			>
 				<div className="text-slate-600">
 					<p className="font-semibold text-xl">HI THERE</p>
 					<h1 className="text-3xl font-bold">I AM ONAH VICTOR</h1>
