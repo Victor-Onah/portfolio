@@ -25,7 +25,7 @@ const Contact = () => {
 	}, []);
 	return (
 		<div id="contact" className="flex max-md:flex-col-reverse">
-			<div className="bg-zinc-600 w-1/2 max-md:w-full max-w-3xl px-4 py-10">
+			<div className="bg-zinc-200 w-1/2 max-md:w-full max-w-3xl px-4 py-10">
 				<form className="flex flex-col gap-4 max-w-md m-auto">
 					<input
 						className="p-2 rounded-md bg-zinc-400 text-white focus:outline-none bg-opacity-35"
