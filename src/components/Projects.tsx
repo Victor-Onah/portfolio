@@ -8,7 +8,7 @@ const projects = [
     },
     {
         name: "Lendsqr Dashboard",
-        link: "https://victor-onah-lendsqr-fe-test.onrender.com/dashboard",
+        link: "https://victor-onah-lendsqr-fe-test.onrender.com/dashboard/users",
         imageUrl: "/images/lendsqr.png"
     },
     {
