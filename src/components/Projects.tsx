@@ -18,12 +18,12 @@ const projects = [
     },
     {
         name: "Naija Quotes",
-        link: "https://naija-quotes.onrender.com/",
+        link: "https://naijaquotes.onrender.com/",
         imageUrl: "/images/naija-quotes.png"
     },
     {
         name: "EthVault Crypto Wallet",
-        link: "https://ethvault.onrender.com/.com",
+        link: "https://ethvault.onrender.com/",
         imageUrl: "/images/ethvault.png"
     },
     {
