@@ -71,7 +71,7 @@ const Header = () => {
                 </h3>
                 <button
                     onClick={() => setIsMenuOpen(true)}
-                    className="h-10 w-10 hover:bg-indigo-200 active:scale-95 rounded-full flex justify-center items-center"
+                    className="h-10 w-10 hover:bg-blue-400 active:scale-95 rounded-full flex justify-center items-center"
                 >
                     <VscMenu />
                 </button>
@@ -79,13 +79,13 @@ const Header = () => {
             <div
                 className={`${
                     isMenuOpen ? "-translate-x-0" : "-translate-x-full"
-                } transition-transform flex flex-col fixed inset-0 bg-white justify-between z-[99999]`}
+                } transition-transform flex flex-col fixed inset-0 bg-blue-600 text-white justify-between z-[99999]`}
             >
                 <div className="flex flex-col justify-between gap-3 p-4">
                     <div className="flex justify-end">
                         <button
                             onClick={() => setIsMenuOpen(false)}
-                            className="h-10 w-10 hover:bg-indigo-200 active:scale-95 rounded-full flex justify-center
+                            className="h-10 w-10 hover:bg-blue-400 active:scale-95 rounded-full flex justify-center
          items-center"
                         >
                             <VscClose />
@@ -93,7 +93,7 @@ const Header = () => {
                     </div>
                     <a
                         onClick={(e) => (scroll(e), setTimeout(() => setIsMenuOpen(false), 300))}
-                        className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
+                        className="p-2 rounded-md hover:bg-blue-400 active:scale-95 transition-transform"
                         href="#about"
                         data-id="about"
                     >
@@ -101,7 +101,7 @@ const Header = () => {
                     </a>
                     <a
                         onClick={(e) => (scroll(e), setTimeout(() => setIsMenuOpen(false), 300))}
-                        className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
+                        className="p-2 rounded-md hover:bg-blue-400 active:scale-95 transition-transform"
                         href="#services"
                         data-id="services"
                     >
@@ -109,7 +109,7 @@ const Header = () => {
                     </a>
                     <a
                         onClick={(e) => (scroll(e), setTimeout(() => setIsMenuOpen(false), 300))}
-                        className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
+                        className="p-2 rounded-md hover:bg-blue-400 active:scale-95 transition-transform"
                         href="#projects"
                         data-id="projects"
                     >
@@ -117,7 +117,7 @@ const Header = () => {
                     </a>
                     <a
                         onClick={(e) => (scroll(e), setTimeout(() => setIsMenuOpen(false), 300))}
-                        className="p-2 rounded-md hover:bg-indigo-200 hover:text-slate-600 active:scale-95 transition-transform"
+                        className="p-2 rounded-md hover:bg-blue-400 active:scale-95 transition-transform"
                         href="#contact"
                         data-id="contact"
                     >
