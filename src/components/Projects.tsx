@@ -17,6 +17,11 @@ const projects = [
         imageUrl: "/images/dowell-shop.png"
     },
     {
+        name: "Iyke Bulkwill.com (E Commerce)",
+        link: "https://iyke-bulkwill-qw1o.onrender.com/",
+        imageUrl: "/images/iyke-bulkwill.png"
+    },
+    {
         name: "Naija Quotes",
         link: "https://naijaquotes.onrender.com/",
         imageUrl: "/images/naija-quotes.png"
