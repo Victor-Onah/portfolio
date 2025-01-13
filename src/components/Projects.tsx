@@ -87,7 +87,7 @@ const Project = ({ imageUrl, link, name }: (typeof projects)[number]) => {
             href={link}
             className="hover:bg-purple-800/30 bg-purple-800 duration-[700ms] shadow-sm hover:shadow-lg overflow-hidden flex flex-col justify-between rounded-2xl opacity-0 scale-90"
         >
-            <img className="h-full block flex-1" src={imageUrl} alt={name} />
+            <img height={146} width={312} className="h-full block flex-1" src={imageUrl} alt={name} />
             <h3 className="font-semibold p-3 text-center">{name}</h3>
         </a>
     );
